@@ -1,0 +1,493 @@
+$grey: #eff2f6;
+$grey_font: #92a1a5;
+$red: #ff343d;
+$back_grey: #232323;
+$border_grey_btn: #3b3b3b;
+$border_grey_btn_product: #eff2f6;
+$green:#318f76;
+* {
+    color: black;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Myriad Pro";
+    background-color: white;
+    border: 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    .row {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .menu {
+            width: 83.33333%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            .menu_left {
+                display: inline-block;
+                position: relative;
+                top: 15px;
+                span {
+                    color: $grey_font;
+                    margin-left: 45px;
+                    font-size: 13px;
+                    img {
+                        margin-right: 5px;
+                        vertical-align: baseline;
+                        width: 5%;
+                    }
+                }
+                h3 {
+                    font-size: 15px;
+                    font-weight: 500;
+                    sup {
+                        color: $red;
+                        font-size: 35px;
+                        font-weight: bold;
+                        position: relative;
+                        top: 0.2em;
+                    }
+                }
+            }
+            .menu_right {
+                display: inline-block;
+                float: right;
+                position: relative;
+                top: 36px;
+                span {
+                    color: white;
+                    margin-right: 25px;
+                    vertical-align: middle;
+                    @media screen and (max-width: 560px) {
+                        color: black;
+                    }
+                }
+                img {
+                    vertical-align: text-top;
+                }
+            }
+        }
+        .first_section {
+            position: relative;
+            width: 100%;
+            top: -42px;
+            max-height: 100vh;
+            .first_section_grey {
+                width: 66.66667%;
+                display: inline-block;
+                background-color: $grey;
+                height: 100vh;
+                @media screen and (max-width: 940px) {
+                    max-height: 70vh;
+                }
+                @media screen and (max-width:560px) {
+                    max-height: 50vh;
+                    width: 100%;
+                    white-space: pre-line;
+                }
+                .phantom {
+                    width: 66.66667%;
+                    position: absolute;
+                    top: 37%;
+                    left: 13%;
+                    p {
+                        color: $grey_font;
+                        line-height: 30px;
+                        @media screen and (max-width: 550px) {
+                            line-height: 10px;
+                            margin: 0;
+                        }
+                    }
+                    .scroll_down {
+                        transform: rotate(-90deg);
+                        position: absolute;
+                        bottom: -200px;
+                        left: -50px;
+                    }
+                    @media screen and (max-width:660px) {
+                        left: 5%;
+                    }
+                    @media screen and (max-width:550px) {
+                        width: 100%;
+                        text-align: center;
+                        left: 0%;
+                        top: 17%;
+                    }
+                }
+            }
+            .phantom_img {
+                position: absolute;
+                width: 48%;
+                left: 42%;
+                top: 16%;
+                @media screen and (max-width: 940px) {
+                    width: 33%;
+                    left: 50%;
+                    top: 30%;
+                }
+                @media screen and (max-width:560px) {
+                    text-align: center;
+                    margin: 0 auto;
+                    top: 65%;
+                    left: 25%;
+                    width: 50%;
+                }
+            }
+            .first_section_red {
+                width: 33.33333%;
+                background-image: url(../css/img/mars.png);
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: contain;
+                display: inline-block;
+                background-color: $red;
+                height: 100vh;
+                float: right;
+                @media screen and (max-width: 940px) {
+                    max-height: 70vh;
+                }
+                @media screen and (max-width:560px) {
+                    max-height: 50vh;
+                    width: 100%;
+                    float: none;
+                    background-position: right;
+                }
+            }
+        }
+        .second_section {
+            position: relative;
+            top: -42px;
+            width: 100%;
+            @media screen and (max-width: 940px) {
+                top: -48px;
+            }
+            .second_left_section {
+                width: 33.33333%;
+                background-image: url(../css/img/phantom_2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 338px;
+                max-height: 338px;
+                background-position: center;
+                display: inline-block;
+                .zone_texte {
+                    width: 60%;
+                    float: right;
+                    h1 {
+                        margin-top: 140px;
+                        letter-spacing: 4px;
+                    }
+                    p {
+                        color: $grey_font;
+                        text-align: left;
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-top: 5px;
+                    }
+                }
+                @media screen and (max-width:810px) {
+                    width: 50%;
+                }
+                @media screen and (max-width:550px) {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .second_right_section {
+                width: 66.66667%;
+                background-image: url(../css/img/route.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 338px;
+                background-position: center;
+                max-height: 338px;
+                float: right;
+                display: inline-block;
+                .back_opa {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    width: 49.5%;
+                    height: 100%;
+                    @media screen and (max-width: 940px) {
+                        width: 100%;
+                    }
+                    h1 {
+                        color: white;
+                        margin-left: 7%;
+                        opacity: 1;
+                        padding-top: 135px;
+                        padding-left: 6%;
+                        letter-spacing: 4px;
+                        line-height: 37px;
+                    }
+                }
+                .btn_view_more {
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    background-color: white;
+                    color: black;
+                    -webkit-border-radius: 28;
+                    -moz-border-radius: 28;
+                    border-radius: 25px;
+                    padding: 7px 30px 5px 18px;
+                    text-decoration: none;
+                    max-width: 70px;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 162px;
+                    right: 8%;
+                    @media screen and(max-width: 670px) {
+                        right: 0%;
+                    }
+                    @media screen and(max-width:550px) {
+                        top: inherit;
+                        bottom: 150px;
+                    }
+                }
+                @media screen and (max-width:810px) {
+                    width: 50%;
+                }
+                @media screen and (max-width:550px) {
+                    width: 100%;
+                    float: none;
+                    display: block;
+                }
+            }
+        }
+        .third_section {
+            position: relative;
+            top: -90px;
+            background-color: white;
+            padding-bottom: 50px;
+            h4 {
+                text-align: center;
+                padding-top: 50px;
+                @media screen and(max-width: 700px) {
+                    margin-bottom: 0px;
+                }
+            }
+            .item {
+                display: inline-block;
+                max-width: 24.8%;
+                text-align: center;
+                margin-top: 50px;
+                width: 25%;
+                @media screen and (max-width: 940px) {
+                    width: 24.6%;
+                }
+                @media screen and (max-width:560px) {
+                    width: 100%;
+                    max-width: 100%;
+                }
+                img {
+                    width: 20%;
+                }
+                p {
+                    text-align: center;
+                    margin-top: 30px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .four_section {
+            width: 100%;
+            height: 338px;
+            position: relative;
+            top: -90px;
+            @media screen and (max-width: 550px) {
+                height: inherit;
+            }
+            .four_section_left {
+                width: 50%;
+                background-image: url(../css/img/ordi.jpg);
+                display: inline-block;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 338px;
+                @media screen and (max-width: 550px) {
+                    width: 100%;
+                    display: block;
+                    float: none;
+                }
+            }
+            .four_section_right {
+                width: 50%;
+                float: right;
+                height: 338px;
+                background-color: $back_grey;
+                background-image: url(../css/img/back_ordi.png);
+                display: inline-block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+                @media screen and (max-width: 550px) {
+                    width: 100%;
+                    float: none;
+                }
+                .new_generation {
+                    margin-left: 10%;
+                    margin-top: 100px;
+                    h1 {
+                        font-size: 3.2rem;
+                        color: white;
+                        letter-spacing: 3px;
+                        font-weight: 100;
+                    }
+                    span {
+                        color: red;
+                    }
+                    .btn_view_more {
+                        background-color: transparent;
+                        color: white;
+                        border: 1px solid $border_grey_btn;
+                        -webkit-border-radius: 28;
+                        -moz-border-radius: 28;
+                        border-radius: 25px;
+                        padding: 7px 0px 5px 18px;
+                        text-decoration: none;
+                        max-width: 70px;
+                        font-size: 12px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .five_section {
+            width: 100%;
+            position: relative;
+            top: -45px;
+            background-color: white;
+            min-height: 350px;
+            .five_section_left {
+                display: inline-block;
+                width: 50%;
+                h1 {
+                    font-size: 3.2rem;
+                    color: black;
+                    letter-spacing: 3px;
+                    font-weight: 100;
+                }
+                .new_generation_flying {
+                    margin-left: 15%;
+                    margin-top: 100px;
+                    .red {
+                        color: $red;
+                    }
+                    .btn_products {
+                        background-color: transparent;
+                        color: black;
+                        border: 1px solid $border_grey_btn_product;
+                        -webkit-border-radius: 28;
+                        -moz-border-radius: 28;
+                        border-radius: 25px;
+                        padding: 7px 0px 5px 18px;
+                        text-decoration: none;
+                        max-width: 70px;
+                        font-size: 12px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .five_section_right {
+                min-height: 338px;
+                width: 50%;
+                float: right;
+                display: inline-block;
+                background-image: url(../css/img/drone.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
+            }
+            @media screen and (max-width:550px) {
+                min-height: 0px;
+                top: -70px;
+            }
+        }
+        .six_section {
+            background-image: url(../css/img/bateau.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            h1 {
+                font-size: 3.2rem;
+                color: white;
+                letter-spacing: 5px;
+                font-weight: 100;
+                text-align: center;
+                padding-top: 400px;
+                padding-right: 25px;
+            }
+            .btn_journey {
+                margin: 0 auto;
+                background-color: white;
+                color: $green;
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 25px;
+                padding: 7px 0px 5px 18px;
+                text-decoration: none;
+                max-width: 70px;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        }
+        footer {
+            background-color: white;
+            min-height: 300px;
+            h1 {
+                color: white;
+                text-shadow: 8px 14px 95px rgba(0, 0, 0, 0.05);
+                text-align: center;
+                font-size: 8rem;
+                letter-spacing: 5px;
+                padding-top: 100px;
+                @media screen and (max-width: 560px) {
+                    font-size: 5rem;
+                }
+            }
+            .resume {
+                color: $green;
+                font-size: 0.8rem;
+                text-align: center;
+                position: relative;
+                top: -115px;
+                h3 {
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+                .red {
+                    color: $red;
+                    position: relative;
+                    font-size: 1.3rem;
+                    top: 0.2em;
+                }
+            }
+        }
+    }
+} /// fin body
